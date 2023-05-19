@@ -12,38 +12,38 @@ class MyCode extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          padding: EdgeInsets.all(20),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(20),
+          decoration: const BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Trouvez votre",
                 style: TextStyle(fontSize: 25),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text(
+              const Text(
                 "Inspiration",
                 style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
-                    color: Color.fromRGBO(
+                    color: const Color.fromRGBO(
                       244,
                       243,
                       243,
                       1,
                     ),
                     borderRadius: BorderRadius.circular(20)),
-                child: TextField(
+                child: const TextField(
                   decoration: InputDecoration(
                       border: InputBorder.none,
                       prefixIcon: Icon(
@@ -54,17 +54,17 @@ class MyCode extends StatelessWidget {
                       hintStyle: TextStyle(color: Colors.grey, fontSize: 15)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               )
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
             "Promo Today",
             style: TextStyle(
@@ -73,7 +73,7 @@ class MyCode extends StatelessWidget {
                 fontSize: 15),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Padding(
@@ -92,16 +92,16 @@ class MyCode extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Container(
           height: 150,
-          margin: EdgeInsets.symmetric(horizontal: 5),
+          margin: const EdgeInsets.symmetric(horizontal: 5),
           decoration: BoxDecoration(
               color: Colors.amber,
               borderRadius: BorderRadius.circular(20),
-              image: DecorationImage(
+              image: const DecorationImage(
                   image: AssetImage('image/img2.jpg'), fit: BoxFit.cover)),
           child: Container(
             decoration: BoxDecoration(
@@ -113,10 +113,10 @@ class MyCode extends StatelessWidget {
                     ],
                     begin: Alignment.bottomRight,
                     stops: [0.2, 0.9])),
-            child: Align(
+            child: const Align(
               alignment: Alignment.bottomLeft,
               child: Padding(
-                padding: const EdgeInsets.only(left: 8.0),
+                padding: EdgeInsets.only(left: 8.0),
                 child: Text(
                   "Best Design",
                   style: TextStyle(
@@ -137,7 +137,7 @@ Widget promoCard(image) {
   return AspectRatio(
     aspectRatio: 2.6 / 3,
     child: Container(
-      margin: EdgeInsets.symmetric(horizontal: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(image: AssetImage(image), fit: BoxFit.cover)),
